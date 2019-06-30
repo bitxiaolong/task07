@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseTemplate" template="/WEB-INF/layout/page.jsp">
+      <put-attribute name="tittle" value="基础"/>
+      <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
+    </definition>
+
+
+    <definition name="student" extends="baseTemplate">
+       <put-attribute name="tittle" value="学院页显示"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/student.jsp"/>
+    </definition>
+
+    <definition name="job" extends="baseTemplate">
+        <put-attribute name="tittle" value="职业"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/job.jsp"/>
+    </definition>
+</tiles-definitions>
