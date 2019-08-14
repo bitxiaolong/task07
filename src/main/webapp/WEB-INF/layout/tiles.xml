@@ -6,7 +6,7 @@
 <tiles-definitions>
     <definition name="baseTemplate" template="/WEB-INF/layout/page.jsp">
       <put-attribute name="tittle" value="基础"/>
-      <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+      <put-attribute name="header" value="/WEB-INF/jsp/header.jsp"/>
         <put-attribute name="body" value=""/>
         <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
     </definition>
@@ -21,4 +21,14 @@
         <put-attribute name="tittle" value="职业"/>
         <put-attribute name="body" value="/WEB-INF/jsp/job.jsp"/>
     </definition>
+
+<!--    <definition name="login" extends="baseTemplate">-->
+<!--        <put-attribute name="tittle" value="登录"/>-->
+<!--        <put-attribute name="body" value="/WEB-INF/jsp/login.jsp"/>-->
+<!--    </definition>-->
+
+<!--    <definition name="register" extends="baseTemplate">-->
+<!--        <put-attribute name="tittle" value="注册"/>-->
+<!--        <put-attribute name="body" value="/WEB-INF/jsp/register.jsp"/>-->
+<!--    </definition>-->
 </tiles-definitions>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="smsUtil" class="com.util.SmsUtil">
+        <constructor-arg name="accountSid" value="8aaf07086c282571016c394cd5670664"></constructor-arg>
+        <constructor-arg name="accountToken" value="6a380328d688481d809eb921d9e55ddb"></constructor-arg>
+        <constructor-arg name="appId" value="8aaf07086c282571016c394cd5c0066b"></constructor-arg>
+        <constructor-arg name="serverIp" value="app.cloopen.com"></constructor-arg>
+        <constructor-arg name="serverPort" value="8883"></constructor-arg>
+        <constructor-arg name="templateId" value="1"></constructor-arg>
+        <constructor-arg name="time" value="5"></constructor-arg>
+    </bean>
+</beans>

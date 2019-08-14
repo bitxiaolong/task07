@@ -1,0 +1,42 @@
+2019-08-12 00:12:26,295 [main] [org.springframework.context.support.ClassPathXmlApplicationContext] [INFO] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19e1023e: startup date [Mon Aug 12 00:12:26 CST 2019]; root of context hierarchy
+2019-08-12 00:12:27,653 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from class path resource [spring/spring-image.xml]
+2019-08-12 09:14:35,485 [main] [org.springframework.context.support.ClassPathXmlApplicationContext] [INFO] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@38cccef: startup date [Mon Aug 12 09:14:35 CST 2019]; root of context hierarchy
+2019-08-12 09:14:36,094 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from class path resource [spring/spring-image.xml]
+2019-08-12 09:14:44,377 [main] [com.aliyun.oss] [WARN] - [Server]Unable to execute HTTP request: The bucket you are attempting to access must be addressed using the specified endpoint. Please send all future requests to this endpoint.
+[ErrorCode]: AccessDenied
+[RequestId]: 5D50BD895CCCDDD3C6C15135
+[HostId]: tasktest.oss-cn-chengdu.aliyuncs.com
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>The bucket you are attempting to access must be addressed using the specified endpoint. Please send all future requests to this endpoint.</Message>
+  <RequestId>5D50BD895CCCDDD3C6C15135</RequestId>
+  <HostId>tasktest.oss-cn-chengdu.aliyuncs.com</HostId>
+  <Bucket>tasktest</Bucket>
+  <Endpoint>oss-cn-beijing.aliyuncs.com</Endpoint>
+</Error>
+
+2019-08-12 09:16:04,100 [main] [org.springframework.context.support.ClassPathXmlApplicationContext] [INFO] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@38cccef: startup date [Mon Aug 12 09:16:04 CST 2019]; root of context hierarchy
+2019-08-12 09:16:04,506 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from class path resource [spring/spring-image.xml]
+2019-08-12 09:40:28,084 [main] [org.springframework.context.support.ClassPathXmlApplicationContext] [INFO] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@38cccef: startup date [Mon Aug 12 09:40:28 CST 2019]; root of context hierarchy
+2019-08-12 09:40:28,410 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from class path resource [spring/spring-image.xml]
+2019-08-12 09:46:13,209 [main] [org.springframework.context.support.ClassPathXmlApplicationContext] [INFO] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@38cccef: startup date [Mon Aug 12 09:46:13 CST 2019]; root of context hierarchy
+2019-08-12 09:46:13,487 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from class path resource [spring/spring-image.xml]
+2019-08-12 21:46:35,699 [main] [com.aliyun.oss] [WARN] - Cannot read object content stream: D:\ (系统找不到指定的路径。)
+2019-08-12 21:58:30,980 [main] [org.springframework.context.support.ClassPathXmlApplicationContext] [INFO] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7cef4e59: startup date [Mon Aug 12 21:58:30 CST 2019]; root of context hierarchy
+2019-08-12 21:58:31,554 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from class path resource [spring/spring-tec.xml]
+2019-08-12 22:06:31,843 [main] [org.springframework.context.support.ClassPathXmlApplicationContext] [INFO] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7cef4e59: startup date [Mon Aug 12 22:06:31 CST 2019]; root of context hierarchy
+2019-08-12 22:06:32,437 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from class path resource [spring/spring-tec.xml]
+2019-08-12 22:15:10,798 [main] [org.springframework.context.support.ClassPathXmlApplicationContext] [INFO] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7cef4e59: startup date [Mon Aug 12 22:15:10 CST 2019]; root of context hierarchy
+2019-08-12 22:15:11,169 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from class path resource [spring/spring-tec.xml]
+2019-08-12 22:16:25,023 [main] [org.springframework.context.support.ClassPathXmlApplicationContext] [INFO] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7cef4e59: startup date [Mon Aug 12 22:16:25 CST 2019]; root of context hierarchy
+2019-08-12 22:16:25,354 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from class path resource [spring/spring-tec.xml]
+2019-08-12 22:17:50,851 [main] [org.springframework.context.support.ClassPathXmlApplicationContext] [INFO] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7cef4e59: startup date [Mon Aug 12 22:17:50 CST 2019]; root of context hierarchy
+2019-08-12 22:17:51,221 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from class path resource [spring/spring-tec.xml]
+2019-08-12 22:20:27,267 [main] [org.springframework.context.support.ClassPathXmlApplicationContext] [INFO] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7cef4e59: startup date [Mon Aug 12 22:20:27 CST 2019]; root of context hierarchy
+2019-08-12 22:20:27,565 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from class path resource [spring/spring-tec.xml]
+2019-08-12 22:32:47,446 [main] [org.springframework.context.support.ClassPathXmlApplicationContext] [INFO] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7cef4e59: startup date [Mon Aug 12 22:32:47 CST 2019]; root of context hierarchy
+2019-08-12 22:32:47,788 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from class path resource [spring/spring-tec.xml]
+2019-08-12 22:37:43,528 [main] [org.springframework.context.support.ClassPathXmlApplicationContext] [INFO] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7cef4e59: startup date [Mon Aug 12 22:37:43 CST 2019]; root of context hierarchy
+2019-08-12 22:37:43,969 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from class path resource [spring/spring-tec.xml]

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.UserMapper">
+
+
+    <insert id="insert" parameterType="com.pojo.User">
+   insert into user (name,password,phone) VALUES (#{name},#{password},#{phone})
+</insert>
+
+    <insert id="insertmail" parameterType="com.pojo.User">
+        insert into user(name,password,email) values (#{name},#{password},#{email})
+    </insert>
+
+    <select id="selectByName" resultType="com.pojo.User">
+   select * from user where name = #{name}
+</select>
+    <select id="selectByCondition" resultType="com.pojo.User">
+   select * from user where name = #{name} and password = #{password}
+</select>
+
+    <select id="selectById" resultType="com.pojo.User">
+        select * from user where  id = #{id}
+    </select>
+
+    <select id="selectByPhone" resultType="com.pojo.User">
+        select * from user where phone = #{phone}
+    </select>
+
+    <insert id="insertphone" parameterType="com.pojo.User">
+        insert into user(name,password,phone,code) values (#{name},#{password},#{phone},#{code})
+    </insert>
+
+    <select id="selectByEmil" resultType="com.pojo.User">
+        select * from user where email = #{email}
+    </select>
+
+    <insert id="insertemail" parameterType="com.pojo.User">
+        insert  into user (name,password,email,code) values  (#{name},#{password},#{email},#{code})
+    </insert>
+
+</mapper>

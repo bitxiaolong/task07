@@ -61,6 +61,9 @@
   </jsp-config>
   <!--配置 org.springframework.web.filter.HiddenHttpMethodFilter:
     可以把 POST 请求转为 DELETE 或 put 请求  -->
+  <listener>
+    <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+  </listener>
   <filter>
     <filter-name>HiddenHttpMethodFilter</filter-name>
     <filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>

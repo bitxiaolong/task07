@@ -17,7 +17,7 @@ public class JobController {
     @Autowired
     private JobMapperService jobMapperService;
 
-    @RequestMapping(value = "/job",method = RequestMethod.GET)
+    @RequestMapping(value = "/u/job",method = RequestMethod.GET)
     public ModelAndView selectJob(){
         List<Job> selecta = jobMapperService.select();
         ModelAndView modelAndView =new ModelAndView();

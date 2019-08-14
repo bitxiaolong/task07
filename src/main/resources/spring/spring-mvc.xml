@@ -21,10 +21,6 @@
     <mvc:annotation-driven />
 
 
-    <mvc:resources location="/static/images/" mapping="/images/**"/>
-    <mvc:resources  location="/static/css-5/" mapping="/css-5/**"/>
-    <mvc:resources location="/WEB-INF/jsp/" mapping="/jsp/**"/>
-    <!--    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>-->
     <mvc:default-servlet-handler/>
     <bean class="org.springframework.web.servlet.view.tiles3.TilesViewResolver"/>
     <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
@@ -34,12 +30,39 @@
             </list>
         </property>
     </bean>
-<!--     3.配置jsp 显示ViewResolver-->
-<!--    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
-<!--        &lt;!&ndash;        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />&ndash;&gt;-->
-<!--        <property name="prefix" value="/WEB-INF/jsp/" />-->
-<!--        <property name="suffix" value=".jsp" />-->
-<!--    </bean>-->
+
+    <mvc:default-servlet-handler/>
+    <!-- 3.配置jsp 显示ViewResolver -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />-->
+        <property name="prefix" value="/WEB-INF/jsp/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
     <!-- 4.扫描web相关的bean -->
     <context:component-scan base-package="com.controller" />
+
+    <!-- 拦截器 -->
+    <mvc:interceptors>
+        <!-- 多个拦截器，顺序执行 -->
+        <!-- 登录认证拦截器 -->
+        <mvc:interceptor>
+            <!--/** 表示所有url包括子url路径 -->
+            <mvc:mapping path="/u/**"/>
+            <bean class="com.interceptor.LoginInterceptor"/>
+            <!--设置拦截器路径-->
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+<!--   配置CommonsMultipartSolver，用于实现文件上传，将其加入springioc容器中，spring ioc容器在初始化的时候，会自动寻找一个id为multipartResolver的bean -->
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+         <property name="defaultEncoding" value="UTF-8"></property>
+        <property name="maxUploadSize" value="1024000"></property>
+    </bean>
+
 </beans>
+
+
+
+
+
