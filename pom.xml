@@ -265,7 +265,7 @@
     <dependency>
       <groupId>org.mybatis</groupId>
       <artifactId>mybatis</artifactId>
-      <version>3.4.1</version>
+      <version>3.5.6</version>
     </dependency>
     <!--c3p0 连接池 -->
 
@@ -431,7 +431,7 @@
           <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.2.8</version>
+            <version>3.5.6</version>
           </dependency>
           <dependency>
             <groupId>mysql</groupId>
